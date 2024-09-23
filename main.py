@@ -1,13 +1,19 @@
 from turtle import *
-# number cube 1 
-# speed(10000000000)
-tracer(0,0)
 
-pencolor("yellow")
-forward(100)
+# draw the perimeter
+for _ in range(4):
+    forward(100)
+    right(60)
+    forward(100)
+    right(60)
 
+#draw diagonals
+right(60)
+for _ in range(2):
+    forward(200)
+    right(120)
+    forward(100)
+    right(120)
+forward(200)
 
-
-
-update()
-exitonclick()
+done()
